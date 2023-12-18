@@ -90,3 +90,7 @@ _build/
 
 # python-dotenv
 .env
+
+
+/data
+.virtual_documents
