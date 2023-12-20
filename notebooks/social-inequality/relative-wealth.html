@@ -178,8 +178,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Demographics of Egypt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="business-activity-trends.html">Analysing business activity trends in Egypt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="OpenStreetMap.html">Places and Points of Interest from OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gender-inequality.html">Gender Equality Survey at Home</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../docs/team.html">Data Goods Team and Acknowledgements</a></li>
 </ul>
 
     </div>
@@ -399,6 +404,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation">Methodology and Implementation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 admin 1 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 admin 2 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 admin 3 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-population-this-covers-only-about-6-13-of-the-land-area">It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest population. This covers only about 6.13% of the land area.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
 </ul>
 </li>
@@ -454,7 +463,7 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 <span class="n">hrsl_egypt1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Total population by admin 1 region&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
@@ -471,6 +480,11 @@ document.write(`
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Total population by admin 2 region&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 <span class="n">egypt_adm1</span><span class="o">.</span><span class="n">boundary</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">linewidth</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
 
+<span class="c1"># for i, cond in enumerate(hrsl_egypt2[&#39;max&#39;]):</span>
+<span class="c1">#     if cond:</span>
+<span class="c1">#         circle = patches.Circle((x[i], y[i]), radius=1, edgecolor=&#39;red&#39;, facecolor=&#39;none&#39;)</span>
+<span class="c1">#         plt.gca().add_patch(circle)</span>
+
 <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
 <span class="n">hrsl_egypt3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Total population by admin 3 region&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
@@ -483,9 +497,245 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/2b21cfaa080ce6ab8da9bbc7a8852e79ed138541ff0ae74dfcace7ec46f0848a.png" src="../../_images/2b21cfaa080ce6ab8da9bbc7a8852e79ed138541ff0ae74dfcace7ec46f0848a.png" />
+<img alt="../../_images/9700154a8d01bacd1f13566c7df4a37a7939d4aa7a3147f05692a3e4acdbf95b.png" src="../../_images/9700154a8d01bacd1f13566c7df4a37a7939d4aa7a3147f05692a3e4acdbf95b.png" />
 </div>
 </div>
+<section id="top-5-admin-1-regions-with-highest-population">
+<h3>Top 5 admin 1 regions with highest population<a class="headerlink" href="#top-5-admin-1-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hrsl_egypt1</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[[</span><span class="s1">&#39;ADM1_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;egy_general_2020&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ADM1_EN</th>
+      <th>egy_general_2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>Giza</td>
+      <td>1.032489e+07</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Cairo</td>
+      <td>9.062930e+06</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Sharkia</td>
+      <td>7.461139e+06</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Dakahlia</td>
+      <td>6.826862e+06</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Behera</td>
+      <td>6.604455e+06</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="top-5-admin-2-regions-with-highest-population">
+<h3>Top 5 admin 2 regions with highest population<a class="headerlink" href="#top-5-admin-2-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hrsl_egypt2</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[[</span><span class="s1">&#39;ADM1_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_PCODE&#39;</span><span class="p">,</span> <span class="s1">&#39;egy_general_2020&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ADM1_EN</th>
+      <th>ADM2_EN</th>
+      <th>ADM2_PCODE</th>
+      <th>egy_general_2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>237</th>
+      <td>Alexandria</td>
+      <td>Muntazah</td>
+      <td>EG0201</td>
+      <td>1.550675e+06</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>Luxor</td>
+      <td>Luxor</td>
+      <td>EG2901</td>
+      <td>1.526273e+06</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>Luxor</td>
+      <td>Luxor</td>
+      <td>EG2902</td>
+      <td>1.513515e+06</td>
+    </tr>
+    <tr>
+      <th>340</th>
+      <td>Giza</td>
+      <td>Umraniyya</td>
+      <td>EG2118</td>
+      <td>1.225824e+06</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>Giza</td>
+      <td>Imbaba</td>
+      <td>EG2101</td>
+      <td>9.996363e+05</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="top-5-admin-3-regions-with-highest-population">
+<h3>Top 5 admin 3 regions with highest population<a class="headerlink" href="#top-5-admin-3-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hrsl_egypt3</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[[</span><span class="s1">&#39;ADM1_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_PCODE&#39;</span><span class="p">,</span><span class="s1">&#39;ADM3_PCODE&#39;</span><span class="p">,</span><span class="s1">&#39;egy_general_2020&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ADM1_EN</th>
+      <th>ADM2_EN</th>
+      <th>ADM2_PCODE</th>
+      <th>ADM3_PCODE</th>
+      <th>egy_general_2020</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2489</th>
+      <td>Kalyoubia</td>
+      <td>Shubra Al-Khayma 2</td>
+      <td>EG1407</td>
+      <td>EG140701</td>
+      <td>509457.455190</td>
+    </tr>
+    <tr>
+      <th>406</th>
+      <td>Cairo</td>
+      <td>Basatin</td>
+      <td>EG0135</td>
+      <td>EG013501</td>
+      <td>443118.097821</td>
+    </tr>
+    <tr>
+      <th>2524</th>
+      <td>Kalyoubia</td>
+      <td>Shubra Al-Khayma 1</td>
+      <td>EG1406</td>
+      <td>EG140602</td>
+      <td>441933.968251</td>
+    </tr>
+    <tr>
+      <th>3733</th>
+      <td>Kalyoubia</td>
+      <td>Khsos</td>
+      <td>EG1412</td>
+      <td>EG141201</td>
+      <td>400054.452690</td>
+    </tr>
+    <tr>
+      <th>1675</th>
+      <td>Luxor</td>
+      <td>Luxor</td>
+      <td>EG2901</td>
+      <td>EG290102</td>
+      <td>383640.934778</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-population-this-covers-only-about-6-13-of-the-land-area">
+<h3>It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest population. This covers only about 6.13% of the land area.<a class="headerlink" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-population-this-covers-only-about-6-13-of-the-land-area" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -513,10 +763,12 @@ document.write(`
 <img alt="../../_images/ebc17f956229ffe0eaee20aa5779ae7360af1b0b9842b5bf42a04b9ce1b59170.png" src="../../_images/ebc17f956229ffe0eaee20aa5779ae7360af1b0b9842b5bf42a04b9ce1b59170.png" />
 </div>
 </div>
+<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/848b312f-f47b-4185-840d-1253aa5de039/embed" frameborder="0" allowfullscreen></iframe></section>
 <section id="observations">
 <h3>Observations<a class="headerlink" href="#observations" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Extremely rich areas are next to extremely poor areas within multiple regions such as Beni Suef, Cairo, Faiyum</p></li>
+<li><p>Extremely rich areas are next to extremely poor areas within multiple regions such as Beni Suef, Cairo, Faiyum.</p></li>
+<li><p>The areas along the water seem richer</p></li>
 </ul>
 </section>
 </section>
@@ -592,6 +844,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation">Methodology and Implementation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 admin 1 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 admin 2 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 admin 3 regions with highest population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-population-this-covers-only-about-6-13-of-the-land-area">It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest population. This covers only about 6.13% of the land area.</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
 </ul>
 </li>
