@@ -1,6 +1,6 @@
-# Understanding Lebanon's Economy through Alternative Data
+# Understanding Egypt's Economy through Alternative Data
 
-The MENA MTI team is leading two analytical projects for Lebanon -- the Lebanon Country Economic Memorandum (CEM) (P178305) and 'Revisiting the Syrian Conflict's Impact on Lebanon (P178302). Data constraints are a major concern for both projects. This repository includes an exploration of alternative data sources that could support analysis of Lebanon's economic growth, conflict, demographics, and refugee dynamics.
+The MENA MTI team is preparing the Egypt Country Economic Memorandum (CEM) and other reports that monitor trends in the Egyptian economy. This repository includes an exploration of alternative data sources that could support analysis of Egypt's economic growth and demographics.
 
 ### Data Availability Statement
 
