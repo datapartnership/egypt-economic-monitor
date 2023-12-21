@@ -1,4 +1,4 @@
-# Understanding Spatial Inequality in Egypt
+# Spatial Inequality in Egypt
 
 The Egypt country economics team is investigating spatial inequality. To support this work, the Lab is exploring the following alternative datasets -
 
@@ -9,5 +9,4 @@ The Egypt country economics team is investigating spatial inequality. To support
 5. Facebook Future of Business Survey (2019-2021)
 6. Facebook Business Activity Trends (2020-2022)
 
-Each of these datasets and the methodology used to obtain them are elucidated in subsequent notebooks (or "chapters"). 
-
+Each of these datasets and the methodology used to obtain them are elucidated in subsequent notebooks (or "chapters").
