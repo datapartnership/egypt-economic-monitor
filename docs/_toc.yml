@@ -10,18 +10,16 @@ parts:
       - file: docs/foundational_datasets_and_data_products
   - caption: Data Products
     chapters:
-      - file: notebooks/social-inequality/README
+      - file: notebooks/activity/business-activity-trends.ipynb
+      - file: notebooks/inequality/README
         sections:
-          - file: notebooks/social-inequality/relative-wealth.ipynb
-          - file: notebooks/social-inequality/OpenStreetMap.ipynb
-          - file: notebooks/social-inequality/gender-inequality.ipynb
-      - file: docs/business-trends.md
-        sections: 
-          - file: notebooks/social-inequality/business-activity-trends.ipynb
+          - file: notebooks/inequality/relative-wealth.ipynb
+          - file: notebooks/inequality/OpenStreetMap.ipynb
+          - file: notebooks/inequality/gender-inequality.ipynb
       - file: notebooks/nighttime-lights/README
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights-in-egypt.ipynb
-          
+
   - caption: Acknowledgements
     chapters:
       - file: docs/team
