@@ -1,6 +1,6 @@
-# Understanding Social Inequality in Egypt
+# Understanding Spatial Inequality in Egypt
 
-For the Egypt Country Economic Monitor. the team would like to analyse social conditions and spatial inequality. To this end, the Data Lab has analysed the following datasets - 
+The Egypt country economics team is investigating spatial inequality. To support this work, the Lab is exploring the following alternative datasets -
 
 1. Meta High Resolution Population Density
 2. Meta Relative Wealth Index
@@ -9,5 +9,5 @@ For the Egypt Country Economic Monitor. the team would like to analyse social co
 5. Facebook Future of Business Survey (2019-2021)
 6. Facebook Business Activity Trends (2020-2022)
 
-Each of these datasets and the methodology used to obtain this data has been elucidated in subsequent notebooks. 
+Each of these datasets and the methodology used to obtain them are elucidated in subsequent notebooks (or "chapters"). 
 
