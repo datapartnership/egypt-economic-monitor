@@ -14,7 +14,7 @@ parts:
       - file: notebooks/inequality/README
         sections:
           - file: notebooks/inequality/relative-wealth.ipynb
-          - file: notebooks/inequality/OpenStreetMap.ipynb
+          - file: notebooks/inequality/openstreetmap.ipynb
           - file: notebooks/inequality/gender-inequality.ipynb
       - file: notebooks/nighttime-lights/README
         sections:
