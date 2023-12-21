@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Analysing business activity trends in Egypt" href="business-activity-trends.html" />
+    <link rel="next" title="Places and Points of Interest from OpenStreetMap" href="OpenStreetMap.html" />
     <link rel="prev" title="Understanding Spatial Inequality in Egypt" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,12 +176,15 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">Understanding Spatial Inequality in Egypt</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Demographics of Egypt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="business-activity-trends.html">Analysing business activity trends in Egypt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="OpenStreetMap.html">Places and Points of Interest from OpenStreetMap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gender-inequality.html">Gender Equality Survey at Home</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/business-trends.html">Analysing Business Activity Trends in Egypt</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="business-activity-trends.html">Analysing Business Activity Trends in Egypt</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nighttime-lights/nighttime-lights-in-egypt.html">Nighttime Lights Trends in Egypt</a></li>
 </ul>
 </li>
@@ -407,11 +410,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation">Methodology and Implementation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 admin 1 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 admin 2 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 admin 3 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-populations-covering-only-6-13-of-the-country-s-land-area">It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest populations, covering only 6.13% of the country’s land area.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 Admin 1 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 Admin 2 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 Admin 3 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-on-population-spatial-distribution">Observation on Population Spatial Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-on-relative-wealth-distribution">Observations on Relative Wealth Distribution</a></li>
 </ul>
 </li>
 </ul>
@@ -500,7 +503,7 @@ document.write(`
 </div>
 </div>
 <section id="top-5-admin-1-regions-with-highest-population">
-<h3>Top 5 admin 1 regions with highest population<a class="headerlink" href="#top-5-admin-1-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<h3>Top 5 Admin 1 Regions with Highest Population<a class="headerlink" href="#top-5-admin-1-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -568,7 +571,7 @@ document.write(`
 </div>
 </section>
 <section id="top-5-admin-2-regions-with-highest-population">
-<h3>Top 5 admin 2 regions with highest population<a class="headerlink" href="#top-5-admin-2-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<h3>Top 5 Admin 2 Regions with Highest Population<a class="headerlink" href="#top-5-admin-2-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -648,7 +651,7 @@ document.write(`
 </div>
 </section>
 <section id="top-5-admin-3-regions-with-highest-population">
-<h3>Top 5 admin 3 regions with highest population<a class="headerlink" href="#top-5-admin-3-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
+<h3>Top 5 Admin 3 Regions with Highest Population<a class="headerlink" href="#top-5-admin-3-regions-with-highest-population" title="Permalink to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -733,8 +736,9 @@ document.write(`
 </div></div></div>
 </div>
 </section>
-<section id="it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-populations-covering-only-6-13-of-the-country-s-land-area">
-<h3>It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest populations, covering only 6.13% of the country’s land area.<a class="headerlink" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-populations-covering-only-6-13-of-the-country-s-land-area" title="Permalink to this heading">#</a></h3>
+<section id="observation-on-population-spatial-distribution">
+<h3>Observation on Population Spatial Distribution<a class="headerlink" href="#observation-on-population-spatial-distribution" title="Permalink to this heading">#</a></h3>
+<p>We observe that the population is concentrated in just a few admin regions. Overall, Giza and Cairo have the highest populations, residing in 6.13% of the country’s land area.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -763,8 +767,8 @@ document.write(`
 </div>
 </div>
 <iframe width="100%" height="500px" src="https://studio.foursquare.com/public/848b312f-f47b-4185-840d-1253aa5de039/embed" frameborder="0" allowfullscreen></iframe></section>
-<section id="observations">
-<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this heading">#</a></h3>
+<section id="observations-on-relative-wealth-distribution">
+<h3>Observations on Relative Wealth Distribution<a class="headerlink" href="#observations-on-relative-wealth-distribution" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The wealthiest areas often appear adjacent to very poor areas, such as in the regions Beni Suef, Cairo, and Faiyum.</p></li>
 <li><p>Wealtheir populations tend to be concentrated near bodies of water.</p></li>
@@ -813,11 +817,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="business-activity-trends.html"
+       href="OpenStreetMap.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analysing business activity trends in Egypt</p>
+        <p class="prev-next-title">Places and Points of Interest from OpenStreetMap</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -842,11 +846,11 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology-and-implementation">Methodology and Implementation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 admin 1 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 admin 2 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 admin 3 regions with highest population</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#it-can-be-seen-that-the-population-is-concentrated-in-a-few-admin-regions-overall-giza-and-cairo-have-the-highest-populations-covering-only-6-13-of-the-country-s-land-area">It can be seen that the population is concentrated in a few admin regions. Overall, Giza and Cairo have the highest populations, covering only 6.13% of the country’s land area.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-1-regions-with-highest-population">Top 5 Admin 1 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-2-regions-with-highest-population">Top 5 Admin 2 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-5-admin-3-regions-with-highest-population">Top 5 Admin 3 Regions with Highest Population</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observation-on-population-spatial-distribution">Observation on Population Spatial Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-on-relative-wealth-distribution">Observations on Relative Wealth Distribution</a></li>
 </ul>
 </li>
 </ul>
