@@ -13,12 +13,15 @@ parts:
       - file: notebooks/social-inequality/README
         sections:
           - file: notebooks/social-inequality/relative-wealth.ipynb
-          - file: notebooks/social-inequality/business-activity-trends.ipynb
           - file: notebooks/social-inequality/OpenStreetMap.ipynb
           - file: notebooks/social-inequality/gender-inequality.ipynb
       - file: notebooks/nighttime-lights/README
+        sections: docs/business-trends.md
+          - file: notebooks/social-inequality/business-activity-trends.ipynb
+      - file: notebooks/nighttime-lights/README
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights-in-egypt.ipynb
+          
   - caption: Acknowledgements
     chapters:
       - file: docs/team
