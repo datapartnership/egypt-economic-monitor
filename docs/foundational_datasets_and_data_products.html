@@ -19,38 +19,39 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -72,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Introduction to Data Goods" href="introduction_to_data_goods.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jan 09, 2024"/>
+    <meta name="docbuild:last-update" content="Jan 29, 2024"/>
   </head>
   
   
@@ -83,7 +84,6 @@ const thebe_selector_output = ".output, .cell_output"
   <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -123,20 +123,15 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <header>
   
-    <div class="bd-header navbar navbar-expand-lg bd-navbar">
-    </div>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
-  </header>
 
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -170,7 +165,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction to Data Goods</span></p>
 <ul class="nav bd-sidenav">
@@ -449,7 +455,7 @@ document.write(`
 <td><p>Admin boundaries up to level 3</p></td>
 <td><p>Open Access</p></td>
 <td><p>Last updated 2020</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FLebanon%20Economic%20Analytics%2FData%2Fshapefiles&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FLebanon%20Economic%20Analytics%2FData%2Fshapefiles&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:datalab&#37;&#52;&#48;worldbank&#46;org">Data Lab</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
@@ -465,7 +471,7 @@ document.write(`
 <td><p>High Resolution Population Density Maps from Meta</p></td>
 <td><p>Proprietary</p></td>
 <td><p>Last updated in 2020</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FLebanon%20Economic%20Analytics%2FData%2Fpopulation&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FLebanon%20Economic%20Analytics%2FData%2Fpopulation&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:ssarva&#37;&#52;&#48;worldbank&#46;org">Sahiti Sarva</a>, Data Lab</p></td>
 </tr>
 <tr class="row-odd"><td><p>4</p></td>
@@ -473,7 +479,7 @@ document.write(`
 <td><p>Points of Interest, Places and Road related data</p></td>
 <td><p>Open</p></td>
 <td><p>N/A</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fosm&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fosm&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:ssarva&#37;&#52;&#48;worldbank&#46;org">Sahiti Sarva</a>, Data Lab</p></td>
 </tr>
 <tr class="row-even"><td><p>5</p></td>
@@ -481,7 +487,7 @@ document.write(`
 <td><p>dataset from Meta showing difference in wealth at 2.5sqkm grid</p></td>
 <td><p>Open</p></td>
 <td><p>Last updated in 2020</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Frelative%5Fwealth%5Findex&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Frelative%5Fwealth%5Findex&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:ssarva&#37;&#52;&#48;worldbank&#46;org">Sahiti Sarva</a>, Data Lab</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
@@ -489,7 +495,7 @@ document.write(`
 <td><p>Dataset showing changes in Facebook Business page activity before and after the pandemic</p></td>
 <td><p>Proprietary</p></td>
 <td><p>Last updated 2022</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fbusiness%2Dactivity%2Dtrends&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fbusiness%2Dactivity%2Dtrends&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:ssarva&#37;&#52;&#48;worldbank&#46;org">Sahiti Sarva</a>, Data Lab</p></td>
 </tr>
 <tr class="row-even"><td><p>7</p></td>
@@ -497,7 +503,7 @@ document.write(`
 <td><p>Meta’s survey conducted to observe gendered impact of COVID-19</p></td>
 <td><p>Proprietary</p></td>
 <td><p>Last updated 2021</p></td>
-<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fgender%2Dequality%2Dsurvey&amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
+<td><p><a class="reference external" href="https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;amp;web=1&amp;amp;e=Yvwh8r&amp;amp;cid=fccdf23e%2D94d5%2D48bf%2Db75d%2D0af291138bde&amp;amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity%2DWBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FEgypt%20Economic%20Monitor%2FData%2Fgender%2Dequality%2Dsurvey&amp;amp;viewid=80cdadb3%2D8bb3%2D47ae%2D8b18%2Dc1dd89c373c5">Project SharePoint</a></p></td>
 <td><p><a class="reference external" href="mailto:ssarva&#37;&#52;&#48;worldbank&#46;org">Sahiti Sarva</a>, Data Lab</p></td>
 </tr>
 </tbody>
@@ -625,7 +631,7 @@ By Development Data Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Jan 09, 2024.
+  Last updated on Jan 29, 2024.
   <br/>
 </p>
   </div>
@@ -649,8 +655,8 @@ By Development Data Group
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
