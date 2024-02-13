@@ -4,10 +4,8 @@ root: README
 parts:
   - caption: Introduction to Data Goods
     chapters:
-      - file: docs/introduction_to_data_goods
-  - caption: Understanding Egypt's Economy through Alternative Data
-    chapters:
-      - file: docs/foundational_datasets_and_data_products
+      - file: docs/introduction-to-data-goods
+      - file: docs/data
   - caption: Data Products
     chapters:
       - file: notebooks/activity/business-activity-trends.ipynb

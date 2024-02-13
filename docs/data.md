@@ -1,6 +1,6 @@
-# Foundational Datasets, Data Products, & Sample Indicators
+# Datasets, Data Products, & Sample Indicators
 
-## Foundational Datasets
+## Datasets
 
 **Foundational Datasets** refer to **all** datasets used in the analytics prepared for a project. The Foundational Datasets table includes a description of the data and their update frequency, as well as access links and contact information for questions about use and access. Users should not require any datasets not included in this table to complete the analytical work for the Data Good.
 
